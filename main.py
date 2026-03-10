@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
-''' github.com/ffdiracex/scrape_py - implementera BeautifulSoup för att skrapa books.toscrape.com - skapad för att lära sig web scraping med Python, aiohttp och BeautifulSoup. (se GeeksForGeeks.com för mer om denna sida) '''
+''' github.com/ffdiracex/scrape_py - implementera BeautifulSoup för att skrapa books.toscrape.com - aiohttp och BeautifulSoup. (se GeeksForGeeks.com för mer om denna sida) '''
 # För att köra: python main.py
 # du kan ändra max_pages i main() för antal sidor att skrapa, ändra hur många threads som används i Scrape(max_concurrent=?)
 # du kan ändra timeout i Scrape om du vill ha längre eller kortare http request timeouts, vi använder 30 sekunder, för att ge servern lite luft
@@ -202,3 +202,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main()) # Kör main-funktionen med icke-blockerande asynkron körning (asyncio)
+
